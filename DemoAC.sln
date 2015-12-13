@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarkovModelCSGO", "MarkovModelCSGO\MarkovModelCSGO.csproj", "{BFB99710-2B2D-40E3-AE1D-E5E8C3764BB3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoAC", "DemoAC\DemoAC.csproj", "{BFB99710-2B2D-40E3-AE1D-E5E8C3764BB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
