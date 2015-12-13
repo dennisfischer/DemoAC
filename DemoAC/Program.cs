@@ -8,7 +8,7 @@ using System.IO;
 using System.Diagnostics;
 using System.Globalization;
 
-namespace MarkovModelCSGO
+namespace DemoAC
 {
     class Program
     {
