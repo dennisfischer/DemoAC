@@ -7,8 +7,8 @@
     <ProjectGuid>{BFB99710-2B2D-40E3-AE1D-E5E8C3764BB3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MarkovModelCSGO</RootNamespace>
-    <AssemblyName>MarkovModelCSGO</AssemblyName>
+    <RootNamespace>DemoAC</RootNamespace>
+    <AssemblyName>DemoAC</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
