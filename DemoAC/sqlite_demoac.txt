@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS maps (
+    id INTEGER NOT NULL PRIMARY KEY,
+    name TEXT NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS matches (
+    id INTEGER NOT NULL PRIMARY KEY,
+    sha1 TEXT NOT NULL UNIQUE,
+    tickrate INTEGER NOT NULL,
+    map_id INTEGER NOT NULL,
+    FOREIGN KEY(map_id) REFERENCES maps(id)
+);
+
+CREATE TABLE IF NOT EXISTS players (
+    id INTEGER NOT NULL PRIMARY KEY,
+    steam_id INTEGER NOT NULL UNIQUE,
+    name TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS ticks_movement (
+    match_id INTEGER NOT NULL,
+    player_id INTEGER NOT NULL,
+    tick INTEGER NOT NULL,
+    velocity REAL NOT NULL,
+    delta_velocity REAL NOT NULL,
+    delta_position REAL NOT NULL,
+	cheating BOOL NOT NULL,
+    PRIMARY KEY(match_id, player_id, tick),
+    FOREIGN KEY(match_id) REFERENCES matches(id),
+    FOREIGN KEY(player_id) REFERENCES players(id)
+);
